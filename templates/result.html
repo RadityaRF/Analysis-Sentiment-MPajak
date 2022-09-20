@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main">
+    <center>
+        <h1>Hasil Klasifikasi menggunakan metode Lexicon Based</h1>
+        <!--Table result-->
+            {% for table in tables2 %}
+                    {{titles[loop.index]}}
+                    {{ table|safe }}
+            {% endfor %}
+        <br>
+        <h1>Hasil Sentiment Analysis dalam Pie Chart</h1>
+        <img src="{{ url_for('static', filename='img/pie.png') }}" align="middle" id="pie">
+        <br>
+        <h1>Hasil Wordcloud Reviews M-Pajak</h1>
+        <div class="container_word">
+            <img src="{{ url_for('static', filename='img/negword.png') }}" class="wordcloud">
+            <img src="{{ url_for('static', filename='img/posword.png') }}" class="wordcloud">
+        </div>
+        <br>
+        <h1>Hasil Akurasi dan Confusion Matrix Model LSTM</h1>
+        <div class="container_word">
+            <img src="{{ url_for('static', filename='img/akurasi.png') }}" class="wordcloud">
+            <img src="{{ url_for('static', filename='img/confusion.png') }}" class="wordcloud">
+        </div>
+        </center>
+
+    
+        
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main">
+        <center>
+        <p>
+                <h1>Hasil Preprocessing Dataset M-Pajak di Google Playstore</h1>
+                <h2>Dengan menggunakan Remove Stopwords Indonesia, cleansing data,</h2>
+                <h2>tokenizing, perubahan casefolding, filtering, dan stemming dataset</h2>
+        </p>
+        <!--Table result-->
+        {% for table in tables1 %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+        {% endfor %}
+        </center>
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main">
+    <center>
+    <h1>Hasil Scraping Dataset M-Pajak di Google Playstore</h1>
+    <!--Table result-->
+        {% for table in tables0 %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+        {% endfor %}
+    </center>
+</div>
+
+{% endblock %}
