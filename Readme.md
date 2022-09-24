@@ -4,4 +4,26 @@ The purpose of creating this application is to help the government, especially t
 # Screenshot
 
 ## Home
-test
+![](docs/images/home.png)
+## Scraping Dataset
+![](docs/images/scrap.png)
+## Pre - Processing 
+![](docs/images/pre.png)
+## Result
+![](docs/gif/result.gif)
+## About
+![](docs/images/about.png)
+
+# How To Install
+1. Make sure python 3.10 is installed or you can download it from [here](https://www.python.org/downloads/)
+2. Install library needed in requirement.txt
+    ```
+    pip -m install requirements.txt
+    ```
+3. Run code below and wait for training LSTM model
+    ```
+    flask run
+    ```
+4. Enjoy the application :smiley:
+
+
